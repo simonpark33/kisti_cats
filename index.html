@@ -13,7 +13,7 @@
             margin: 10px;
         }
         .cat img {
-            max-width: 500px;
+            max-width: 200px; /* Adjusted image size */
             height: auto;
         }
         button {
@@ -24,17 +24,26 @@
             cursor: pointer;
             margin: 10px;
         }
+        /* Added styles for new sections */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to KISTI cats homepage!!</h1>
-    <!-- Introduction Cats Button -->
     <a href="cats.html"><button>Introduction Cats</button></a>
-    <!-- Save Logs Button -->
     <a href="save-logs.html"><button>Save Logs</button></a>
-    <!-- Something Good for Cats Button -->
     <a href="good-for-cats.html"><button>Something Good for Cats</button></a>
-    <!-- App History Button -->
     <a href="app-history.html"><button>App History</button></a>
     <div class="cat-container">
         <div class="cat">
@@ -43,6 +52,49 @@
         </div>
         <!-- Add more cats here -->
     </div>
+    <!-- Cat Care Tips Section -->
+    <section>
+        <h2>Cat Care Tips</h2>
+        <ul>
+            <li>Feed your cat a balanced diet appropriate for their age, weight, and health needs.</li>
+            <li>Provide fresh water at all times.</li>
+            <li>Keep the litter box clean and in a quiet, accessible location.</li>
+            <!-- Add more tips here -->
+        </ul>
+    </section>
+    <!-- Photo Upload and Gallery -->
+    <section>
+        <h2>Upload Your Cat Photo</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="catPhoto" accept="image/*">
+            <input type="submit" value="Upload">
+        </form>
+        <div class="photo-gallery">
+            <!-- Photos will appear here -->
+        </div>
+    </section>
+    <!-- Event Calendar -->
+    <section>
+        <h2>Upcoming Cat Events</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>2023-09-05</td>
+                <td>Cat Show</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>2023-10-12</td>
+                <td>Cat Adoption Fair</td>
+                <td>Los Angeles</td>
+            </tr>
+            <!-- Add more events as needed -->
+        </table>
+    </section>
 </body>
 </html>
 
