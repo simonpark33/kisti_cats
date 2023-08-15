@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jipsa's Diary</title>
+</head>
+<body>
+    <h1>Jipsa's Diary</h1>
+    <textarea id="diaryContent" rows="10" cols="50"></textarea>
+    <button onclick="saveDiary()">Save</button>
+    <a href="index.html">Back to Main Page</a>
+    <script>
+        function saveDiary() {
+            var content = document.getElementById("diaryContent").value;
+            localStorage.setItem('jipsaDiary', content);
+            alert("Diary saved!");
+        }
+
+        // Load the saved diary content
+        window.onload = function() {
+            var savedContent = localStorage.getItem('jipsaDiary');
+            if (savedContent) {
+                document.getElementById("diaryContent").value = savedContent;
+            }
+        }
+    </script>
+</body>
+</html>
+
