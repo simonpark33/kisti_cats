@@ -2,43 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Park Jipsa's Diary</title>
-    <style>
-        .entry {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        .date {
-            font-weight: bold;
-        }
-    </style>
+    <title>Jipsa's Diary</title>
 </head>
 <body>
-    <h1>Park Jipsa's Diary</h1>
-    <a href="index.html"><button>Back to Main Page</button></a>
-    <section>
-        <h2>New Entry</h2>
-        <form action="/add-diary-entry" method="post">
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
-            <br><br>
-            <label for="entry">Diary Entry:</label>
-            <textarea id="entry" name="entry" rows="4" cols="50" required></textarea>
-            <br><br>
-            <input type="submit" value="Add Entry">
-        </form>
-    </section>
-    <section>
-        <h2>Previous Entries</h2>
-        <!-- Example Entry -->
-        <div class="entry">
-            <p class="date">2023-08-10</p>
-            <p>Today was a wonderful day with the cats at KISTI...</p>
-        </div>
-        <!-- Add more entries as needed -->
-    </section>
+    <h1>Jipsa's Diary</h1>
+    <textarea id="diaryContent" rows="10" cols="50"></textarea>
+    <button onclick="saveDiary()">Save</button>
+    <a href="index.html">Back to Main Page</a>
+    <script>
+        function saveDiary() {
+            var content = document.getElementById("diaryContent").value;
+            localStorage.setItem('jipsaDiary', content);
+            alert("Diary saved!");
+        }
+
+        // Load the saved diary content
+        window.onload = function() {
+            var savedContent = localStorage.getItem('jipsaDiary');
+            if (savedContent) {
+                document.getElementById("diaryContent").value = savedContent;
+            }
+        }
+    </script>
 </body>
 </html>
 
