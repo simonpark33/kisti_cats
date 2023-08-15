@@ -1,0 +1,5 @@
+How to Update the changes?
+
+git add .
+git commit -m "comment"
+git push origin master 
