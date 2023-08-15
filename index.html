@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to KISTI Cats homepage!! </title>
+    <title>Welcome to KISTI Cats homepage!!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        .cat-container {
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+        header, footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
             display: flex;
-            flex-wrap: wrap;
-        }
-        .cat {
-            margin: 10px;
-        }
-        .cat img {
-            max-width: 300px; /* Adjusted image size */
-            height: auto;
+            flex-direction: column;
+            align-items: center;
         }
         button {
             background-color: #4CAF50;
@@ -23,79 +30,50 @@
             border: none;
             cursor: pointer;
             margin: 10px;
+            transition: background-color 0.3s;
         }
-        /* Added styles for new sections */
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        button:hover {
+            background-color: #45a049;
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
+        .cat-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        th {
-            background-color: #f2f2f2;
+        .cat {
+            margin: 20px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .cat img {
+            max-width: 200px;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to KISTI cats homepage!!</h1>
-    <a href="cats.html"><button>Introduction Cats</button></a>
-    <a href="save-logs.html"><button>Save Logs</button></a>
-    <a href="good-for-cats.html"><button>Something Good for Cats</button></a>
-    <a href="app-history.html"><button>App History</button></a>
-    <a href="jipsa-diary.html"><button>Park Jipsa's Diary</button></a>
-    <div class="cat-container">
-        <div class="cat">
-            <img src="./photos/3friends.jpg" alt="3 friends">
-            <p>Leon, Jeotso and Lucy The 3 friends KISTI Cats</p>
+    <header>
+        <h1>Welcome to KISTI Cats homepage!!</h1>
+    </header>
+    <div class="container">
+        <a href="cats.html"><button>Introduction Cats</button></a>
+        <a href="save-logs.html"><button>Save Logs</button></a>
+        <a href="good-for-cats.html"><button>Something Good for Cats</button></a>
+        <a href="app-history.html"><button>App History</button></a>
+        <a href="jipsa-diary.html"><button>Park Jipsa's Diary</button></a>
+        <div class="cat-container">
+            <div class="cat">
+                <img src="./photos/3friends.jpg" alt="3 friends">
+                <p>Leon, Jeotso and Lucy the 3 friends KISTI cats</p>
+            </div>
+            <!-- Add more cats here -->
         </div>
-        <!-- Add more cats here -->
     </div>
-    <!-- Cat Care Tips Section -->
-    <section>
-        <h2>Cat Care Tips</h2>
-        <ul>
-            <li>Feed your cat a balanced diet appropriate for their age, weight, and health needs.</li>
-            <li>Provide fresh water at all times.</li>
-            <li>Keep the litter box clean and in a quiet, accessible location.</li>
-            <!-- Add more tips here -->
-        </ul>
-    </section>
-    <!-- Photo Upload and Gallery -->
-    <section>
-        <h2>Upload Your Cat Photo</h2>
-        <form action="/upload" method="post" enctype="multipart/form-data">
-            <input type="file" name="catPhoto" accept="image/*">
-            <input type="submit" value="Upload">
-        </form>
-        <div class="photo-gallery">
-            <!-- Photos will appear here -->
-        </div>
-    </section>
-    <!-- Event Calendar -->
-    <section>
-        <h2>Upcoming Cat Events</h2>
-        <table>
-            <tr>
-                <th>Date</th>
-                <th>Event</th>
-                <th>Location</th>
-            </tr>
-            <tr>
-                <td>2023-09-05</td>
-                <td>Cat Show</td>
-                <td>New York</td>
-            </tr>
-            <tr>
-                <td>2023-10-12</td>
-                <td>Cat Adoption Fair</td>
-                <td>Los Angeles</td>
-            </tr>
-            <!-- Add more events as needed -->
-        </table>
-    </section>
+    <footer>
+        <p>&copy; 2023 KISTI Cats | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
 
