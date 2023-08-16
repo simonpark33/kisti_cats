@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Cats</title>
+    <style>
+        .cat {
+            margin: 10px;
+        }
+        .cat img {
+            max-width: 150px; /* Adjust this to the desired width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction Cats</h1>
+    <!-- Leon -->
+    <div class="cat">
+        <img src="./photos/leon2.JPG" alt="Cat 1">
+        <p>The most adorable cat of KISTI.</p>
+    </div>
+    <!-- Milk cow -->
+    <div class="cat">
+        <img src="./photos/milk2.JPG" alt="Cat 2">
+        <p> Jeotso(Milk cow) is so cute. He likes churrr a lot!!</p>
+    </div>
+    <!-- Lucy -->
+    <div class="cat">
+        <img src="./photos/lucy1.JPG" alt="Cat 3">
+        <p> Lucy is Jeotso lover. Always follow him :)</p>
+    <!-- Leo -->
+    <div class="cat">
+        <img src="./photos/leo1.JPG" alt="Cat 4">
+        <p> Leo is Leon's mom. She lives around her daughter, Leon.</p>
+    </div> 
+    </div>
+    <!-- JJobso(Fake milk cow) -->
+    <div class="cat">
+        <img src="./photos/fake1.JPG" alt="Cat 4">
+        <p> JJobso looks similar to the Jeotso but he/she is shy cat. He/She makes sound always!!</p>
+    </div>
+    <!-- Gateau -->
+    <div class="cat">
+        <img src="./photos/gateau1.JPG" alt="Cat 1">
+        <p> Gateau is all black cat. He likes sleeping.</p>
+    </div>
+    <!-- Add more cats as needed -->
+    <a href="index.html">Back to Main Page</a>
+</body>
+</html>
+

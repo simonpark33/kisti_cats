@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photos of KISTI Cats</title>
+    <title>KISTI 고양이 사진</title>
     <style>
-        /* Styles for the photo gallery and upload form */
         .photo-gallery {
             display: flex;
             flex-wrap: wrap;
+        }
+        .photo-gallery .date-album {
+            margin: 20px;
         }
         .photo-gallery img {
             max-width: 200px;
             margin: 10px;
         }
-        .upload-form {
-            margin: 20px 0;
-        }
-        /* Add more styling as needed */
     </style>
 </head>
 <body>
-    <h1>Photos of KISTI Cats</h1>
-    <section class="upload-form">
-        <h2>Upload a Photo</h2>
-        <form action="/upload-cat-photo" method="post" enctype="multipart/form-data">
-            <label for="date">Date:</label>
-            <input type="date" name="date" required>
-            <input type="file" name="catPhoto" accept="image/*" required>
-            <input type="submit" value="Upload">
-        </form>
-    </section>
+    <h1>KISTI 고양이 사진</h1>
     <section class="photo-gallery">
-        <!-- Photos will appear here, categorized by date -->
+        <!-- Photos will be loaded here -->
     </section>
+    <script>
+        fetch('./photos.json') // Update this path if needed
+            .then(response => response.json())
+            .then(data => {
+                const gallery = document.querySelector('.photo-gallery');
+                Object.entries(data).forEach(([date, files]) => {
+                    const album = document.createElement('div');
+                    album.className = 'date-album';
+                    const h2 = document.createElement('h2');
+                    h2.innerText = date;
+                    album.appendChild(h2);
+                    gallery.appendChild(album);
+
+                    files.forEach(file => {
+                        const img = document.createElement('img');
+                        img.src = `./photos/${date}/${file}`;
+                        album.appendChild(img);
+                    });
+                });
+            });
+    </script>
 </body>
 </html>
 

@@ -6,48 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction Cats</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+        }
+        .cat-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
         .cat {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
             margin: 10px;
         }
         .cat img {
             max-width: 150px; /* Adjust this to the desired width */
             height: auto; /* Maintain aspect ratio */
+            border-radius: 5px;
+        }
+        .cat p {
+            color: #555;
+            font-size: 14px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
         }
     </style>
 </head>
 <body>
     <h1>Introduction Cats</h1>
-    <!-- Leon -->
-    <div class="cat">
-        <img src="./photos/leon2.JPG" alt="Cat 1">
-        <p>The most adorable cat of KISTI.</p>
+    <div class="cat-container">
+        <!-- Leon -->
+        <div class="cat">
+            <img src="./photos/leon2.JPG" alt="Cat 1">
+            <p>The most adorable cat of KISTI.</p>
+        </div>
+        <!-- Milk cow -->
+        <div class="cat">
+            <img src="./photos/milk2.JPG" alt="Cat 2">
+            <p>Jeotso(Milk cow) is so cute. He likes churrr a lot!!</p>
+        </div>
+        <!-- Lucy -->
+        <div class="cat">
+            <img src="./photos/lucy1.JPG" alt="Cat 3">
+            <p>Lucy is Jeotso lover. Always follow him :)</p>
+        </div>
+        <!-- Leo -->
+        <div class="cat">
+            <img src="./photos/leo1.JPG" alt="Cat 4">
+            <p>Leo is Leon's mom. She lives around her daughter, Leon.</p>
+        </div>
+        <!-- JJobso(Fake milk cow) -->
+        <div class="cat">
+            <img src="./photos/fake1.JPG" alt="Cat 4">
+            <p>JJobso looks similar to the Jeotso but he/she is shy cat. He/She makes sound always!!</p>
+        </div>
+        <!-- Gateau -->
+        <div class="cat">
+            <img src="./photos/gateau1.JPG" alt="Cat 1">
+            <p>Gateau is all black cat. He likes sleeping.</p>
+        </div>
+        <!-- Add more cats as needed -->
     </div>
-    <!-- Milk cow -->
-    <div class="cat">
-        <img src="./photos/milk2.JPG" alt="Cat 2">
-        <p> Jeotso(Milk cow) is so cute. He likes churrr a lot!!</p>
-    </div>
-    <!-- Lucy -->
-    <div class="cat">
-        <img src="./photos/lucy1.JPG" alt="Cat 3">
-        <p> Lucy is Jeotso lover. Always follow him :)</p>
-    <!-- Leo -->
-    <div class="cat">
-        <img src="./photos/leo1.JPG" alt="Cat 4">
-        <p> Leo is Leon's mom. She lives around her daughter, Leon.</p>
-    </div> 
-    </div>
-    <!-- JJobso(Fake milk cow) -->
-    <div class="cat">
-        <img src="./photos/fake1.JPG" alt="Cat 4">
-        <p> JJobso looks similar to the Jeotso but he/she is shy cat. He/She makes sound always!!</p>
-    </div>
-    <!-- Gateau -->
-    <div class="cat">
-        <img src="./photos/gateau1.JPG" alt="Cat 1">
-        <p> Gateau is all black cat. He likes sleeping.</p>
-    </div>
-    <!-- Add more cats as needed -->
     <a href="index.html">Back to Main Page</a>
 </body>
 </html>
