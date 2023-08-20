@@ -1,49 +1,37 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KISTI 고양이 사진</title>
+    <title>Album of KISTI Cats :)</title>
     <style>
         .photo-gallery {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
-        .photo-gallery .date-album {
+        .date-album {
             margin: 20px;
+            text-align: center;
         }
-        .photo-gallery img {
+        .date-album img {
             max-width: 200px;
             margin: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>KISTI 고양이 사진</h1>
+    <h1>KISTI Photos</h1>
     <section class="photo-gallery">
-        <!-- Photos will be loaded here -->
+        <!-- Example Date Album -->
+        <div class="date-album">
+            <h2>08/16/23</h2>
+            <img src="./photos/081623/image1.JPG" alt="Photo 1">
+            <img src="./photos/081623/image2.JPG" alt="Photo 2">
+            <!-- Add more photos for this date as needed -->
+        </div>
+        <!-- Repeat the above pattern for other dates -->
     </section>
-    <script>
-        fetch('./photos.json') // Update this path if needed
-            .then(response => response.json())
-            .then(data => {
-                const gallery = document.querySelector('.photo-gallery');
-                Object.entries(data).forEach(([date, files]) => {
-                    const album = document.createElement('div');
-                    album.className = 'date-album';
-                    const h2 = document.createElement('h2');
-                    h2.innerText = date;
-                    album.appendChild(h2);
-                    gallery.appendChild(album);
-
-                    files.forEach(file => {
-                        const img = document.createElement('img');
-                        img.src = `./photos/${date}/${file}`;
-                        album.appendChild(img);
-                    });
-                });
-            });
-    </script>
 </body>
 </html>
 

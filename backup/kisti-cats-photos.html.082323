@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Album of KISTI Cats :) </title>
+    <style>
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photo-gallery .date-album {
+            margin: 20px;
+        }
+        .photo-gallery img {
+            max-width: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>KISTI Photos</h1>
+    <section class="photo-gallery">
+        <!-- Photos will be loaded here -->
+    </section>
+    <script>
+        fetch('./photos.json') // Update this path if needed
+            .then(response => response.json())
+            .then(data => {
+                const gallery = document.querySelector('.photo-gallery');
+                Object.entries(data).forEach(([date, files]) => {
+                    const album = document.createElement('div');
+                    album.className = 'date-album';
+                    const h2 = document.createElement('h2');
+                    h2.innerText = date;
+                    album.appendChild(h2);
+                    gallery.appendChild(album);
+
+                    files.forEach(file => {
+                        const img = document.createElement('img');
+                        img.src = `./photos/${date}/${file}`;
+                        album.appendChild(img);
+                    });
+                });
+            });
+    </script>
+</body>
+</html>
+
