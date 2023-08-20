@@ -44,38 +44,37 @@
     </style>
 </head>
 <body>
-    <h1>Introduction of KISTI Cats ヽ(=^･ω･^=)丿</h1>
-<p>This is the introduction remarks I want to insert: These cats have become more than just animals at KISTI; they are friends and companions to the people working there. They bring joy, comfort, and sometimes even inspiration to the KISTI community. Feel free to visit and enjoy the delightful company of our KISTI cats!
+    <h1>Introduction Cats</h1>
     <div class="cat-container">
         <!-- Leon -->
         <div class="cat">
             <img src="./photos/leon2.JPG" alt="Cat 1">
-            <p>Leon: Known as the most adorable cat at KISTI, Leon is a friendly and playful cat loved by all who meet her.</p>
+            <p>The most adorable cat of KISTI.</p>
         </div>
         <!-- Milk cow -->
         <div class="cat">
             <img src="./photos/milk2.JPG" alt="Cat 2">
-            <p>Jeotso (Milk Cow): Cute and cuddly, Jeotso has a special fondness for churrs. His unique appearance has earned him the nickname "Milk Cow."</p>
+            <p>Jeotso(Milk cow) is so cute. He likes churrr a lot!!</p>
         </div>
         <!-- Lucy -->
         <div class="cat">
             <img src="./photos/lucy1.JPG" alt="Cat 3">
-            <p>Lucy: Lucy, known as Jeotso's lover, follows him everywhere. Her loyal and affectionate nature has endeared her to many.</p>
+            <p>Lucy is Jeotso lover. Always follow him :)</p>
         </div>
         <!-- Leo -->
         <div class="cat">
             <img src="./photos/leo1.JPG" alt="Cat 4">
-            <p>Leo: The mother of Leon, Leo spends her time near her daughter, nurturing and protecting her.</p>
+            <p>Leo is Leon's mom. She lives around her daughter, Leon.</p>
         </div>
         <!-- JJobso(Fake milk cow) -->
         <div class="cat">
             <img src="./photos/fake1.JPG" alt="Cat 4">
-            <p>JJobso (Fake Milk Cow): Shy yet vocal, JJobso bears a striking resemblance to Jeotso but is easily distinguishable by her timid nature.</p>
+            <p>JJobso looks similar to the Jeotso but he/she is shy cat. He/She makes sound always!!</p>
         </div>
         <!-- Gateau -->
         <div class="cat">
             <img src="./photos/gateau1.JPG" alt="Cat 1">
-            <p>Gateau: An all-black cat with a preference for sleep, Gateau's relaxed and calm demeanor is a comforting presence at KISTI.</p>
+            <p>Gateau is all black cat. He likes sleeping.</p>
         </div>
         <!-- Add more cats as needed -->
     </div>
