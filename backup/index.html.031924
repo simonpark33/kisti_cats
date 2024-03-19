@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KISTI Cats homepage ฅ^•ﻌ•^ฅ Meow~</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+        header, footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .cat-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .cat {
+            margin: 20px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .cat img {
+            max-width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to KISTI Cats homepage ฅ^•ﻌ•^ฅ Meow~</h1>
+    </header>
+    <p>
+	This site is dedicated to the wonderful cats of KISTI. The motivation for launching the site is for caring KISTI cats well and archiving their photos. Here, you can discover their unique personalities, view a collection of adorable photos, and learn more about how these feline friends bring joy to the KISTI community. Join us in celebrating the enchanting world of KISTI's cats!
+    </p>	
+
+    <div class="container">
+        <a href="cats.html"><button>Introduction Cats</button></a>
+	<a href="kisti-cats-photos.html"><button>Photos of KISTI Cats</button></a>
+	<a href="good-for-cats.html"><button>Something Good for Cats</button></a>
+	<a href="app-history.html"><button>Homepage History</button></a>
+	<a href="jipsa-diary.html"><button>Park Jipsa's Diary</button></a>	
+        <div class="cat-container">
+            <div class="cat">
+                <img src="./photos/3friends.jpg" alt="3 friends">
+                <p>Leon, Jeotso and Lucy; the 3 friends KISTI cats</p>
+            </div>
+	    <video width="640" height="360" controls>
+	    <source src="./videos/1.MOV" type="video/quicktime"> <!-- Assuming the file is vid.mov -->
+	    Your browser does not support the video tag.
+	    </video>
+
+            <!-- Add more cats here -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 KISTI Cats | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
