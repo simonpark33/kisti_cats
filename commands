@@ -4,7 +4,6 @@ git add .
 git commit -m "comment"
 git push origin master
 
-How to generate the new token?
-git remote set-url origin git@github.com:simonpark33/kisti_cats.git
+git remote set-url origin https://simonpark33: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@github.com/simonpark33/kisti_cats.git
 
  
