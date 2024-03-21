@@ -1,0 +1,4 @@
+032324
+git config --global pull.rebase false
+git pull origin master
+
