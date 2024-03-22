@@ -1,4 +1,14 @@
-032324
+History
+
+032224
+Changed the authentification method from https to ssh
+How?
+	1. used existing id_rsa key in /.ssh
+	2. copy and paste it in the github ssh key 
+	3. Change the remote URL from HTTPS to SSH:
+		 git remote set-url origin git@github.com:simonpark33/kisti_cats.git
+
+032124
 git config --global pull.rebase false
 git pull origin master
 
