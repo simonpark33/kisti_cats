@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Something Good for Cats</title>
+    <style>
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Something Good for Cats</h1>
+    <p>Here are some reputable websites that offer valuable information about cat care, behavior, health, and more:</p>
+    <ul>
+    <li><a href="https://www.youtube.com/@bemypet" target="_blank"> Be my cat Youtube channel: useful information of cats!!</a></li>
+    <li><a href="https://www.youtube.com/watch?v=aOxqD_Kp8Bo" target="_blank"> Cat's expressions of affection to Jipsa: Yoon Teachers' youtube</a></li>
+    <li><a href="https://www.youtube.com/watch?v=aOxqD_Kp8Bo" target="_blank"> Cat healty care by season: Yoon Teachers' youtube </a></li>
+    </ul>
+    <p> something should be added here.. </p>
+    <a href="index.html">Back to Main Page</a>
+</body>
+</html>
+
