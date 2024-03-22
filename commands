@@ -4,14 +4,6 @@ git add .
 git commit -m "comment"
 git push origin master
 
-032124
-git remote set-url origin https://simonpark33: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@github.com/simonpark33/kisti_cats.git
-
-
-
-032024
-git remote set-url origin https://simonpark33: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@github.com/simonpark33/kisti_cats.git
-
 When the error occurs:
 git pull origin master
  

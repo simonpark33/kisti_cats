@@ -46,18 +46,40 @@
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        .cat img {
-            max-width: 400px;
-            height: auto;
-        }
-    </style>
+	}
+.cat img {
+	max-width: 400px;
+height: auto;
+}
+
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+	.cat img {
+		max-width: 100%;
+height: auto;
+	}
+	.container, .cat-container, .cat {
+padding: 0;
+margin: 0;
+width: 100%;
+       box-sizing: border-box;
+	}
+	button {
+width: 90%; /* allows some space on the sides */
+padding: 10px;
+margin: 10px 5%; /* centers the buttons with 5% margin on either side */
+	}
+	/* Additional responsive adjustments can be placed here */
+}
+
+</style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to KISTI Cats homepage ฅ^•ﻌ•^ฅ Meow~</h1>
-    </header>
-    <p>
+<header>
+<h1>Welcome to KISTI Cats homepage ฅ^•ﻌ•^ฅ Meow~</h1>
+</header>
+<p>
 	This site is dedicated to the wonderful cats of KISTI. The motivation for launching the site is for caring KISTI cats well and archiving their photos. Here, you can discover their unique personalities, view a collection of adorable photos, and learn more about how these feline friends bring joy to the KISTI community. Join us in celebrating the enchanting world of KISTI's cats!
     </p>	
 
