@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photos of KISTI Cats ฅ^•ﻌ•^ฅ</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+    padding: 20px;
+  }
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .date-album {
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+  }
+  .date-album h2 {
+    color: #4a4a4a;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  .date-album img {
+    max-width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+</style>
+
+</head>
+<body>
+<h1>Photos of KISTI Cats :)</h1>
+<section class="photo-gallery">
+
+<div class="date-album">
+<h2>10/01/23</h2>
+<img src="./photos/100123/1.JPG" alt="Photo 1">
+<img src="./photos/100123/2.JPG" alt="Photo 2">
+<img src="./photos/100123/3.JPG" alt="Photo 3">
+<img src="./photos/100123/4.JPG" alt="Photo 4"> 
+<img src="./photos/100123/5.JPG" alt="Photo 5">
+<img src="./photos/100123/6.JPG" alt="Photo 6">
+<img src="./photos/100123/7.JPG" alt="Photo 7">
+<img src="./photos/100123/8.JPG" alt="Photo 8"> 
+<img src="./photos/100123/9.JPG" alt="Photo 9">
+<img src="./photos/100123/10.JPG" alt="Photo 10">
+<img src="./photos/100123/11.JPG" alt="Photo 11">
+<img src="./photos/100123/12.JPG" alt="Photo 12"> 
+<img src="./photos/100123/13.JPG" alt="Photo 13">
+<img src="./photos/100123/14.JPG" alt="Photo 14"> 
+<img src="./photos/100123/15.JPG" alt="Photo 15"> 
+</div>
+
+
+<div class="date-album">
+<h2>10/02/23</h2>
+<img src="./photos/100223/1.JPG" alt="Photo 1">
+<img src="./photos/100223/2.JPG" alt="Photo 2">
+<img src="./photos/100223/3.JPG" alt="Photo 3">
+<img src="./photos/100223/4.JPG" alt="Photo 4"> 
+</div>
+
+
+<div class="date-album">
+<h2>09/27/23</h2>
+<img src="./photos/092723/1.JPG" alt="Photo 1">
+<img src="./photos/092723/2.JPG" alt="Photo 2">
+<img src="./photos/092723/3.JPG" alt="Photo 3">
+<img src="./photos/092723/4.JPG" alt="Photo 4"> 
+<img src="./photos/092723/5.JPG" alt="Photo 5">
+<img src="./photos/092723/6.JPG" alt="Photo 6">
+<img src="./photos/092723/7.JPG" alt="Photo 7">
+<img src="./photos/092723/8.JPG" alt="Photo 8"> 
+<img src="./photos/092723/9.JPG" alt="Photo 9">
+<img src="./photos/092723/10.JPG" alt="Photo 10">
+<img src="./photos/092723/11.JPG" alt="Photo 11">
+<img src="./photos/092723/12.JPG" alt="Photo 12"> 
+<img src="./photos/092723/13.JPG" alt="Photo 13">
+<img src="./photos/092723/14.JPG" alt="Photo 14"> 
+<img src="./photos/092723/15.JPG" alt="Photo 15"> 
+</div>
+
+<div class="date-album">
+<h2>09/23/23</h2>
+<img src="./photos/092323/1.JPG" alt="Photo 1">
+<img src="./photos/092323/2.JPG" alt="Photo 2">
+<img src="./photos/092323/3.JPG" alt="Photo 3">
+<img src="./photos/092323/4.JPG" alt="Photo 4"> 
+<img src="./photos/092323/5.JPG" alt="Photo 5">
+<img src="./photos/092323/6.JPG" alt="Photo 6">
+<img src="./photos/092323/7.JPG" alt="Photo 7">
+<img src="./photos/092323/8.JPG" alt="Photo 8"> 
+<img src="./photos/092323/9.JPG" alt="Photo 9">
+<img src="./photos/092323/10.JPG" alt="Photo 10">
+<img src="./photos/092323/11.JPG" alt="Photo 11">
+<img src="./photos/092323/12.JPG" alt="Photo 12"> 
+<img src="./photos/092323/13.JPG" alt="Photo 13">
+<img src="./photos/092323/14.JPG" alt="Photo 14"> 
+<img src="./photos/092323/15.JPG" alt="Photo 15"> 
+</div>
+
+
+<div class="date-album">
+<h2>09/22/23</h2>
+<img src="./photos/092223/1.JPG" alt="Photo 1">
+<img src="./photos/092223/2.JPG" alt="Photo 2">
+<img src="./photos/092223/3.JPG" alt="Photo 3">
+<img src="./photos/092223/4.JPG" alt="Photo 4"> 
+<img src="./photos/092223/5.JPG" alt="Photo 5">
+<img src="./photos/092223/6.JPG" alt="Photo 6">
+<img src="./photos/092223/7.JPG" alt="Photo 7">
+<img src="./photos/092223/8.JPG" alt="Photo 8"> 
+<img src="./photos/092223/9.JPG" alt="Photo 9">
+<img src="./photos/092223/10.JPG" alt="Photo 10">
+<img src="./photos/092223/11.JPG" alt="Photo 11">
+<img src="./photos/092223/12.JPG" alt="Photo 12"> 
+<img src="./photos/092223/13.JPG" alt="Photo 13">
+<img src="./photos/092223/14.JPG" alt="Photo 14"> 
+<img src="./photos/092223/15.JPG" alt="Photo 15"> 
+</div>
+
+
+<div class="date-album">
+<h2>09/20/23</h2>
+<img src="./photos/092023/1.JPG" alt="Photo 1">
+<img src="./photos/092023/2.JPG" alt="Photo 2">
+<img src="./photos/092023/3.JPG" alt="Photo 3">
+<img src="./photos/092023/4.JPG" alt="Photo 4"> 
+<img src="./photos/092023/5.JPG" alt="Photo 5">
+<img src="./photos/092023/6.JPG" alt="Photo 6">
+<img src="./photos/092023/7.JPG" alt="Photo 7">
+<img src="./photos/092023/8.JPG" alt="Photo 8"> 
+<img src="./photos/092023/9.JPG" alt="Photo 9">
+<img src="./photos/092023/10.JPG" alt="Photo 10">
+<img src="./photos/092023/11.JPG" alt="Photo 11">
+<img src="./photos/092023/12.JPG" alt="Photo 12"> 
+<img src="./photos/092023/13.JPG" alt="Photo 13">
+<img src="./photos/092023/14.JPG" alt="Photo 14"> 
+</div>
+
+<div class="date-album">
+<h2>09/15/23</h2>
+<img src="./photos/091523/1.JPG" alt="Photo 1">
+<img src="./photos/091523/2.JPG" alt="Photo 2">
+<img src="./photos/091523/3.JPG" alt="Photo 3">
+<img src="./photos/091523/4.JPG" alt="Photo 4"> 
+<img src="./photos/091523/5.JPG" alt="Photo 5">
+<img src="./photos/091523/6.JPG" alt="Photo 6">
+<img src="./photos/091523/7.JPG" alt="Photo 7">
+<img src="./photos/091523/8.JPG" alt="Photo 8"> 
+</div>
+
+<div class="date-album">
+<h2>09/14/23</h2>
+<img src="./photos/091423/1.JPG" alt="Photo 1">
+<img src="./photos/091423/2.JPG" alt="Photo 2">
+<img src="./photos/091423/3.JPG" alt="Photo 3">
+<img src="./photos/091423/4.JPG" alt="Photo 4"> 
+<img src="./photos/091423/5.JPG" alt="Photo 5">
+<img src="./photos/091423/6.JPG" alt="Photo 6">
+<img src="./photos/091423/7.JPG" alt="Photo 7">
+<img src="./photos/091423/8.JPG" alt="Photo 8"> 
+<img src="./photos/091423/9.JPG" alt="Photo 9">
+<img src="./photos/091423/10.JPG" alt="Photo 10">
+<img src="./photos/091423/11.JPG" alt="Photo 11">
+<img src="./photos/091423/12.JPG" alt="Photo 12"> 
+<img src="./photos/091423/13.JPG" alt="Photo 13">
+<img src="./photos/091423/14.JPG" alt="Photo 14"> 
+<img src="./photos/091423/15.JPG" alt="Photo 15"> 
+<img src="./photos/091423/16.JPG" alt="Photo 16"> 
+</div>
+
+<div class="date-album">
+<h2>09/13/23</h2>
+<img src="./photos/091423/1.JPG" alt="Photo 1">
+<img src="./photos/091423/2.JPG" alt="Photo 2">
+<img src="./photos/091423/3.JPG" alt="Photo 3">
+<img src="./photos/091423/4.JPG" alt="Photo 4"> 
+<img src="./photos/091423/5.JPG" alt="Photo 5">
+<img src="./photos/091423/6.JPG" alt="Photo 6">
+<img src="./photos/091423/7.JPG" alt="Photo 7">
+<img src="./photos/091423/8.JPG" alt="Photo 8"> 
+<img src="./photos/091423/9.JPG" alt="Photo 9">
+<img src="./photos/091423/10.JPG" alt="Photo 10">
+</div>
+
+<div class="date-album">
+<h2>09/08/23</h2>
+<img src="./photos/090823/1.JPG" alt="Photo 1">
+<img src="./photos/090823/2.JPG" alt="Photo 2">
+<img src="./photos/090823/3.JPG" alt="Photo 3">
+<img src="./photos/090823/4.JPG" alt="Photo 4"> 
+<img src="./photos/090823/5.JPG" alt="Photo 5">
+<img src="./photos/090823/6.JPG" alt="Photo 6">
+<img src="./photos/090823/7.JPG" alt="Photo 7">
+<img src="./photos/090823/8.JPG" alt="Photo 8"> 
+<img src="./photos/090823/9.JPG" alt="Photo 9">
+<img src="./photos/090823/10.JPG" alt="Photo 10">
+<img src="./photos/090823/11.JPG" alt="Photo 11">
+<img src="./photos/090823/12.JPG" alt="Photo 12"> 
+<img src="./photos/090823/13.JPG" alt="Photo 13">
+<img src="./photos/090823/14.JPG" alt="Photo 14"> 
+<img src="./photos/090823/15.JPG" alt="Photo 15"> 
+<img src="./photos/090823/16.JPG" alt="Photo 16"> 
+</div>
+
+<div class="date-album">
+<h2>09/03/23</h2>
+<img src="./photos/090323/1.JPG" alt="Photo 1">
+<img src="./photos/090323/2.JPG" alt="Photo 2">
+<img src="./photos/090323/3.JPG" alt="Photo 3">
+<img src="./photos/090323/4.JPG" alt="Photo 4"> 
+<img src="./photos/090323/5.JPG" alt="Photo 5">
+<img src="./photos/090323/6.JPG" alt="Photo 6">
+<img src="./photos/090323/7.JPG" alt="Photo 7">
+<img src="./photos/090323/8.JPG" alt="Photo 8"> 
+<img src="./photos/090323/9.JPG" alt="Photo 9">
+<img src="./photos/090323/10.JPG" alt="Photo 10">
+<img src="./photos/090323/11.JPG" alt="Photo 11">
+<img src="./photos/090323/12.JPG" alt="Photo 12"> 
+<img src="./photos/090323/13.JPG" alt="Photo 13">
+<img src="./photos/090323/14.JPG" alt="Photo 14"> 
+<img src="./photos/090323/15.JPG" alt="Photo 15"> 
+<img src="./photos/090323/16.JPG" alt="Photo 16"> 
+</div>
+
+<div class="date-album">
+<h2>08/31/23</h2>
+<img src="./photos/083123/1.JPG" alt="Photo 1">
+<img src="./photos/083123/2.JPG" alt="Photo 2">
+<img src="./photos/083123/3.JPG" alt="Photo 3">
+<img src="./photos/083123/4.JPG" alt="Photo 4"> 
+<img src="./photos/083123/5.JPG" alt="Photo 5">
+<img src="./photos/083123/6.JPG" alt="Photo 6">
+<img src="./photos/083123/7.JPG" alt="Photo 7">
+<img src="./photos/083123/8.JPG" alt="Photo 8"> 
+<img src="./photos/083123/9.JPG" alt="Photo 9">
+<img src="./photos/083123/10.JPG" alt="Photo 10">
+<img src="./photos/083123/11.JPG" alt="Photo 11">
+<img src="./photos/083123/12.JPG" alt="Photo 12"> 
+<img src="./photos/083123/13.JPG" alt="Photo 13">
+</div>
+
+<div class="date-album">
+<h2>08/24/23</h2>
+<img src="./photos/082423/1.JPG" alt="Photo 1">
+<img src="./photos/082423/2.JPG" alt="Photo 2">
+<img src="./photos/082423/3.JPG" alt="Photo 3">
+<img src="./photos/082423/4.JPG" alt="Photo 4"> 
+<img src="./photos/082423/5.JPG" alt="Photo 5">
+<img src="./photos/082423/6.JPG" alt="Photo 6">
+<img src="./photos/082423/7.JPG" alt="Photo 7">
+<img src="./photos/082423/8.JPG" alt="Photo 8"> 
+<img src="./photos/082423/9.JPG" alt="Photo 9">
+<img src="./photos/082423/10.JPG" alt="Photo 10">
+<img src="./photos/082423/11.JPG" alt="Photo 11">
+<img src="./photos/082423/12.JPG" alt="Photo 12"> 
+<img src="./photos/082423/13.JPG" alt="Photo 13">
+</div>
+
+
+<div class="date-album">
+<h2>08/16/23</h2>
+<img src="./photos/081623/image4.JPG" alt="Photo 1">
+<img src="./photos/081623/image5.JPG" alt="Photo 2">
+<img src="./photos/081623/image6.JPG" alt="Photo 3">
+<img src="./photos/081623/image7.JPG" alt="Photo 4"> 
+<!-- Add more photos for this date as needed -->
+</div>
+<!-- Repeat the above pattern for other dates -->
+
+<div class="date-album">
+<h2>06/22/23</h2>
+<img src="./photos/062223/1.JPG" alt="Photo 1">
+<img src="./photos/062223/2.JPG" alt="Photo 2">
+<img src="./photos/062223/3.JPG" alt="Photo 3">
+<img src="./photos/062223/4.JPG" alt="Photo 4"> 
+<img src="./photos/062223/5.JPG" alt="Photo 5">
+<img src="./photos/062223/6.JPG" alt="Photo 6">
+<img src="./photos/062223/7.JPG" alt="Photo 7">
+<img src="./photos/062223/8.JPG" alt="Photo 8"> 
+<img src="./photos/062223/9.JPG" alt="Photo 9"> 
+<img src="./photos/062223/10.JPG" alt="Photo 10">
+<!-- Add more photos for this date as needed -->
+</div>
+
+
+<div class="date-album">
+<h2>06/10/23</h2>
+<img src="./photos/061023/1.JPG" alt="Photo 1">
+<img src="./photos/061023/2.JPG" alt="Photo 2">
+<img src="./photos/061023/3.JPG" alt="Photo 3">
+<img src="./photos/061023/4.JPG" alt="Photo 4"> 
+<img src="./photos/061023/5.JPG" alt="Photo 5">
+<img src="./photos/061023/6.JPG" alt="Photo 6">
+<img src="./photos/061023/7.JPG" alt="Photo 7">
+<img src="./photos/061023/8.JPG" alt="Photo 8"> 
+<img src="./photos/061023/9.JPG" alt="Photo 9"> 
+<img src="./photos/061023/10.JPG" alt="Photo 10">
+<img src="./photos/061023/11.JPG" alt="Photo 11">
+<img src="./photos/061023/12.JPG" alt="Photo 12">
+</div>
+
+<div class="date-album">
+<h2>06/01/23</h2>
+<img src="./photos/060123/1.JPG" alt="Photo 1">
+<img src="./photos/060123/2.JPG" alt="Photo 2">
+<img src="./photos/060123/3.JPG" alt="Photo 3">
+<img src="./photos/060123/4.JPG" alt="Photo 4"> 
+<img src="./photos/060123/5.JPG" alt="Photo 5">
+<img src="./photos/060123/6.JPG" alt="Photo 6">
+<img src="./photos/060123/7.JPG" alt="Photo 7">
+<img src="./photos/060123/8.JPG" alt="Photo 8"> 
+<img src="./photos/060123/9.JPG" alt="Photo 9"> 
+<img src="./photos/060123/10.JPG" alt="Photo 10">
+</div>
+
+<div class="date-album">
+<h2>05/29/23</h2>
+<img src="./photos/052923/1.JPG" alt="Photo 1">
+<img src="./photos/052923/2.JPG" alt="Photo 2">
+<img src="./photos/052923/3.JPG" alt="Photo 3">
+<img src="./photos/052923/4.JPG" alt="Photo 4"> 
+<img src="./photos/052923/5.JPG" alt="Photo 5">
+<img src="./photos/052923/6.JPG" alt="Photo 6">
+<img src="./photos/052923/7.JPG" alt="Photo 7">
+<img src="./photos/052923/8.JPG" alt="Photo 8"> 
+<img src="./photos/052923/9.JPG" alt="Photo 9"> 
+<!-- Add more photos for this date as needed -->
+</div>
+
+<div class="date-album">
+<h2>05/28/23</h2>
+<img src="./photos/052823/1.JPG" alt="Photo 1">
+<img src="./photos/052823/2.JPG" alt="Photo 2">
+<img src="./photos/052823/3.JPG" alt="Photo 3">
+<img src="./photos/052823/4.JPG" alt="Photo 4"> 
+<img src="./photos/052823/5.JPG" alt="Photo 5">
+<img src="./photos/052823/6.JPG" alt="Photo 6">
+<img src="./photos/052823/7.JPG" alt="Photo 7">
+<img src="./photos/052823/8.JPG" alt="Photo 8"> 
+<img src="./photos/052823/9.JPG" alt="Photo 9"> 
+<img src="./photos/052823/10.JPG" alt="Photo 10">
+<img src="./photos/052823/11.JPG" alt="Photo 11">
+<img src="./photos/052823/12.JPG" alt="Photo 12">
+<img src="./photos/052823/13.JPG" alt="Photo 13"> 
+<img src="./photos/052823/14.JPG" alt="Photo 14"> 
+<img src="./photos/052823/15.JPG" alt="Photo 15"> 
+<!-- Add more photos for this date as needed -->
+</div>
+
+<div class="date-album">
+<h2>05/14/23</h2>
+<img src="./photos/051423/1.JPG" alt="Photo 1">
+<img src="./photos/051423/2.JPG" alt="Photo 2">
+<img src="./photos/051423/3.JPG" alt="Photo 3">
+<!-- Add more photos for this date as needed -->
+</div>
+
+<div class="date-album">
+<h2>04/25/23</h2>
+<img src="./photos/042523/1.JPG" alt="Photo 1">
+<img src="./photos/042523/2.JPG" alt="Photo 2">
+<img src="./photos/042523/3.JPG" alt="Photo 3">
+<img src="./photos/042523/4.JPG" alt="Photo 4"> 
+<img src="./photos/042523/5.JPG" alt="Photo 5"> 
+<!-- Add more photos for this date as needed -->
+</div>
+
+<div class="date-album">
+<h2>03/22/23</h2>
+<img src="./photos/032223/1.JPG" alt="Photo 1">
+<img src="./photos/032223/2.JPG" alt="Photo 2">
+<img src="./photos/032223/3.JPG" alt="Photo 3">
+<img src="./photos/032223/4.JPG" alt="Photo 4"> 
+<!-- Add more photos for this date as needed -->
+</div>
+
+
+<div class="date-album">
+<h2>03/06/23</h2>
+<img src="./photos/030623/1.JPG" alt="Photo 1">
+<!-- Add more photos for this date as needed -->
+</div>
+
+</section>
+<div class="modal" id="modal">
+  <img src="" id="modalImage" alt="Enlarged Photo">
+</div>
+
+<script>
+  const modal = document.getElementById('modal');
+  const modalImage = document.getElementById('modalImage');
+
+  document.querySelectorAll('.date-album img').forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImage.src = img.src;
+    });
+  });
+
+  modal.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
+
