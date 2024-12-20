@@ -6,199 +6,105 @@
     <title>Welcome to KISTI Cats homepage ฅ^•ﻌ•^ฅ Meow~</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        :root {
-            /* Light Theme Colors */
-            --background-color: #f2f2f2;
-            --text-color: #000000;
-            --header-footer-bg: #4CAF50;
-            --button-bg: #4CAF50;
-            --button-hover-bg: #45a049;
-
-            /* Dark Theme Colors */
-            --background-color-dark: #1e1e1e;
-            --text-color-dark: #ffffff;
-            --header-footer-bg-dark: #333333;
-            --button-bg-dark: #555555;
-            --button-hover-bg-dark: #666666;
-        }
-
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
+            background-color: #f2f2f2;
             margin: 0;
-            transition: background-color 0.3s, color 0.3s;
         }
-
         header, footer {
-            background-color: var(--header-footer-bg);
-            color: var(--text-color);
+            background-color: #4CAF50;
+            color: white;
             padding: 10px;
             text-align: center;
         }
-
         .container {
             padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
         button {
-            background-color: var(--button-bg);
-            color: var(--text-color);
+            background-color: #4CAF50;
+            color: white;
             padding: 14px 20px;
             border: none;
             cursor: pointer;
             margin: 10px;
             transition: background-color 0.3s;
         }
-
         button:hover {
-            background-color: var(--button-hover-bg);
+            background-color: #45a049;
         }
-
         .cat-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
-
         .cat {
             margin: 20px;
             background-color: #ffffff;
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
+	}
+.cat img {
+	max-width: 400px;
+height: auto;
+}
 
-        .cat img {
-            max-width: 400px;
-            height: auto;
-        }
 
-        /* Media Queries for responsiveness */
-        @media only screen and (max-width: 768px) {
-            .cat img {
-                max-width: 100%;
-                height: auto;
-            }
-            .container, .cat-container, .cat {
-                padding: 0;
-                margin: 0;
-                width: 100%;
-                box-sizing: border-box;
-            }
-            button {
-                width: 90%; /* allows some space on the sides */
-                padding: 10px;
-                margin: 10px 5%; /* centers the buttons with 5% margin on either side */
-            }
-        }
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+	.cat img {
+		max-width: 100%;
+height: auto;
+	}
+	.container, .cat-container, .cat {
+padding: 0;
+margin: 0;
+width: 100%;
+       box-sizing: border-box;
+	}
+	button {
+width: 90%; /* allows some space on the sides */
+padding: 10px;
+margin: 10px 5%; /* centers the buttons with 5% margin on either side */
+	}
+	/* Additional responsive adjustments can be placed here */
+}
 
-        /* Theme Toggle Switch */
-        .theme-switch {
-            display: inline-flex;
-            align-items: center;
-            cursor: pointer;
-            margin-left: 20px;
-        }
-
-        .theme-switch input {
-            display: none;
-        }
-
-        .slider {
-            width: 40px;
-            height: 20px;
-            background-color: #ccc;
-            border-radius: 34px;
-            position: relative;
-            transition: background-color 0.3s;
-        }
-
-        .slider:before {
-            content: "";
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            background-color: white;
-            border-radius: 50%;
-            top: 2px;
-            left: 2px;
-            transition: transform 0.3s;
-        }
-
-        input:checked + .slider {
-            background-color: #4CAF50;
-        }
-
-        input:checked + .slider:before {
-            transform: translateX(20px);
-        }
-
-        .label-text {
-            margin-left: 10px;
-            color: var(--text-color);
-        }
-    </style>
+</style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to KISTI Cats homepage ฅ^•ﻌ•^ฅ Meow~</h1>
-        <label class="theme-switch">
-            <input type="checkbox" id="theme-toggle">
-            <span class="slider"></span>
-            <span class="label-text">Dark Mode</span>
-        </label>
-    </header>
-    <p>
-        This site is dedicated to the wonderful cats of KISTI. The motivation for launching the site is for caring KISTI cats well and archiving their photos. Here, you can discover their unique personalities, view a collection of adorable photos, and learn more about how these feline friends bring joy to the KISTI community. Join us in celebrating the enchanting world of KISTI's cats!
-    </p>
+<header>
+<h1>Welcome to KISTI Cats homepage ฅ^•ﻌ•^ฅ Meow~</h1>
+</header>
+<p>
+	This site is dedicated to the wonderful cats of KISTI. The motivation for launching the site is for caring KISTI cats well and archiving their photos. Here, you can discover their unique personalities, view a collection of adorable photos, and learn more about how these feline friends bring joy to the KISTI community. Join us in celebrating the enchanting world of KISTI's cats!
+    </p>	
+
     <div class="container">
-        <a href="cats.html"><button>Introduction of Cats</button></a>
-        <a href="kisti-cats-photos.html"><button>Photos of KISTI Cats</button></a>
-        <a href="good-for-cats.html"><button>Something Good for Cats</button></a>
-        <a href="jipsa-diary.html"><button>Park Jipsa's Diary</button></a>
-        <a href="app-history.html"><button>Homepage History</button></a>
+        <a href="cats.html"><button>Introduction Cats</button></a>
+	<a href="kisti-cats-photos.html"><button>Photos of KISTI Cats</button></a>
+	<a href="good-for-cats.html"><button>Something Good for Cats</button></a>
+	<a href="jipsa-diary.html"><button>Park Jipsa's Diary</button></a>	
+	<a href="app-history.html"><button>Homepage History</button></a>	
         <div class="cat-container">
             <div class="cat">
                 <img src="./photos/3friends.jpg" alt="3 friends">
                 <p>레아, 까망, 로시: 키스티 삼총사냥 :) </p>
             </div>
-            <video width="640" height="360" controls>
-                <source src="./videos/1.MOV" type="video/quicktime">
-                Your browser does not support the video tag.
-            </video>
+	    <video width="640" height="360" controls>
+	    <source src="./videos/1.MOV" type="video/quicktime"> <!-- Assuming the file is vid.mov -->
+	    Your browser does not support the video tag.
+	    </video>
+
             <!-- Add more cats here -->
         </div>
     </div>
     <footer>
         <p>&copy; 2023 KISTI Cats | All Rights Reserved</p>
     </footer>
-    <script>
-        const toggleSwitch = document.getElementById('theme-toggle');
-
-        // Load saved theme preference
-        const currentTheme = localStorage.getItem('theme');
-        if (currentTheme === 'dark') {
-            toggleSwitch.checked = true;
-            applyDarkTheme();
-        }
-
-        toggleSwitch.addEventListener('change', () => {
-            if (toggleSwitch.checked) {
-                applyDarkTheme();
-                localStorage.setItem('theme', 'dark');
-            } else {
-                applyLightTheme();
-                localStorage.setItem('theme', 'light');
-            }
-        });
-
-        function applyDarkTheme() {
-            document.documentElement.style.setProperty('--background-color', 'var(--background-color-dark)');
-            document.document
-::contentReference[oaicite:0]{index=0}
- 
+</body>
+</html>
 
